@@ -1,0 +1,68 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  .product {
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $light-gray;
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    .img-box {
+      img {
+        width: 100%;
+      }
+    }
+    .product-details {
+      .product-link {
+        margin: 1rem 0;
+        font-weight: bold;
+      }
+      .title {
+        font-weight: bold;
+        margin: 1rem 0;
+      }
+      .sub-title {
+        font-weight: bold;
+        margin: 0 0 1rem 0;
+      }
+      .description {
+        line-height: 2rem;
+      }
+    }
+  }
+  @include respond-to($md) {
+    .product {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      .img-box {
+        flex: 1;
+        margin-right: 2rem;
+        img {
+          width: 100%;
+        }
+      }
+      .product-details {
+        flex: 2;
+      }
+    }
+  }
+  @include respond-to($lg) {
+    flex-direction: row;
+    .product {
+      margin-right: 1rem;
+      width: 25%;
+    }
+  }
+  @include respond-to($vlg) {
+    flex-direction: row;
+    .product {
+      margin-right: 1rem;
+      width: 25%;
+    }
+  }
+}

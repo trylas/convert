@@ -1,0 +1,93 @@
+img {
+  display: block; }
+
+body {
+  font-family: Arial, Helvetica, Sans-Serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #181818; }
+
+h1 {
+  font-size: 32px; }
+
+a {
+  color: #4656ae; }
+
+p {
+  font-family: Arial, Helvetica, Sans-Serif;
+  color: #1f1f1f; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 1100px;
+  margin: auto; }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .container {
+      width: 900px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+      width: 700px; } }
+  @media only screen and (max-width: 767px) {
+    .container {
+      width: 480px; } }
+  @media only screen and (max-width: 480px) {
+    .container {
+      width: 280px; } }
+
+.products {
+  display: flex;
+  flex-direction: column; }
+  .products .product {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 1rem; }
+    .products .product:last-child {
+      margin-right: 0; }
+    .products .product .img-box img {
+      width: 100%; }
+    .products .product .product-details .product-link {
+      margin: 1rem 0;
+      font-weight: bold; }
+    .products .product .product-details .title {
+      font-weight: bold;
+      margin: 1rem 0; }
+    .products .product .product-details .sub-title {
+      font-weight: bold;
+      margin: 0 0 1rem 0; }
+    .products .product .product-details .description {
+      line-height: 2rem; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .products .product {
+      display: flex;
+      flex-direction: row;
+      width: 100%; }
+      .products .product .img-box {
+        flex: 1;
+        margin-right: 2rem; }
+        .products .product .img-box img {
+          width: 100%; }
+      .products .product .product-details {
+        flex: 2; } }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .products {
+      flex-direction: row; }
+      .products .product {
+        margin-right: 1rem;
+        width: 25%; } }
+  @media only screen and (min-width: 1200px) {
+    .products {
+      flex-direction: row; }
+      .products .product {
+        margin-right: 1rem;
+        width: 25%; } }
